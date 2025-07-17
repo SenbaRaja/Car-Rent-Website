@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpeedRent - Car Rental</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="car.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🚗 SpeedRent</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cars">Cars</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero d-flex align-items-center text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Rent the Ride of Your Dreams</h1>
+      <p class="lead">Affordable, Reliable & Fast</p>
+      <a href="#cars" class="btn btn-warning mt-3">View Cars</a>
+    </div>
+  </section>
+
+  <!-- Cars Section -->
+  <section id="cars" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Available Cars</h2>
+      <div class="row g-4">
+        <!-- Car Cards -->
+       <section id="cars" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5 text-dark fw-bold">🚗 Our Top Cars</h2>
+    <div class="row g-4">
+      <!-- Car 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg">
+          <img src="https://cdn.pixabay.com/photo/2018/10/29/00/50/jeep-3780273_1280.jpg" class="card-img-top" alt="SUV">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">XUV 700 - SUV</h5>
+            <p class="card-text">Spacious and premium comfort, perfect for family trips.</p>
+            <h6 class="fw-bold">₹1800/day</h6>
+            <a href="#booking" class="btn btn-danger mt-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg">
+          <img src="https://cdn.pixabay.com/photo/2015/01/19/13/51/car-604019_1280.jpg" class="card-img-top" alt="Sedan">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Honda City - Sedan</h5>
+            <p class="card-text">Stylish and smooth driving experience for city rides.</p>
+            <h6 class="fw-bold">₹1500/day</h6>
+            <a href="#booking" class="btn btn-danger mt-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Car 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg">
+          <img src="https://cdn.pixabay.com/photo/2016/05/18/10/52/buick-1400243_1280.jpg" class="card-img-top" alt="Hatchback">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Swift - Hatchback</h5>
+            <p class="card-text">Compact and fuel-efficient, ideal for daily commutes.</p>
+            <h6 class="fw-bold">₹1200/day</h6>
+            <a href="#booking" class="btn btn-danger mt-2">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Repeat for more cars -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-5 text-white bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Book Your Car</h2>
+      <form id="bookingForm" class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-6">
+          <select class="form-select" required>
+            <option selected disabled>Select Car</option>
+            <option>SUV</option>
+            <option>Sedan</option>
+            <option>Hatchback</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning px-5">Confirm Booking</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Contact Us</h2>
+      <p>Email: support@speedrent.com | Phone: +91 98765 43210</p>
+      <p>Location: Chennai, India</p>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-center text-white py-3">
+    &copy; 2025 SpeedRent. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="car.js"></script>
+</body>
+</html>

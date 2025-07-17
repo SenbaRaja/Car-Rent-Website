@@ -1,0 +1,97 @@
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #EDF2F4;
+  color: #1A1A1A;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2B2D42 !important;
+}
+.nav-link {
+  color: #EDF2F4 !important;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #FF6F61 !important;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, rgba(43, 45, 66, 0.6), rgba(0, 0, 0, 0.7)), url('https://cdn.pixabay.com/photo/2024/03/11/11/48/great-wall-motor-8626448_1280.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1 {
+  color: #FF6F61;
+  font-weight: 700;
+}
+.hero p {
+  color: #ffffff;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+  color: #FF6F61;
+}
+.card-text {
+  color: #555;
+}
+.card-body {
+  background-color: #ffffff;
+}
+
+/* Buttons */
+.btn-danger {
+  background-color: #FF6F61;
+  border: none;
+}
+.btn-danger:hover {
+  background-color: #e85c4c;
+}
+.btn-warning {
+  background-color: #8D99AE;
+  color: #fff;
+  border: none;
+}
+.btn-warning:hover {
+  background-color: #6c788d;
+}
+
+/* Section Titles */
+h2 {
+  color: #2B2D42;
+}
+
+/* Booking Form */
+#booking {
+  background-color: #2B2D42;
+}
+#booking h2 {
+  color: #FF6F61;
+}
+#booking .form-control, #booking .form-select {
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #2B2D42;
+  color: #EDF2F4;
+}
